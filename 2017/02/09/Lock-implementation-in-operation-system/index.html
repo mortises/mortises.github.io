@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Code monkey</title>
+  <title>Lock implementation in operation system | Code monkey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Code monkey">
-<meta property="og:url" content="http://mortises.github.io/index.html">
+  <meta name="description" content="Take a look at pthread_mutex_t
+1234pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;pthread_mutex_lock(&amp;amp;mutex);balance = balance + 1;pthread_mutex_unlock(&amp;amp;mutex);
+Locks(mutex) are widely used">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lock implementation in operation system">
+<meta property="og:url" content="http://mortises.github.io/2017/02/09/Lock-implementation-in-operation-system/index.html">
 <meta property="og:site_name" content="Code monkey">
+<meta property="og:description" content="Take a look at pthread_mutex_t
+1234pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;pthread_mutex_lock(&amp;amp;mutex);balance = balance + 1;pthread_mutex_unlock(&amp;amp;mutex);
+Locks(mutex) are widely used">
+<meta property="og:updated_time" content="2017-02-09T15:30:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Code monkey">
+<meta name="twitter:title" content="Lock implementation in operation system">
+<meta name="twitter:description" content="Take a look at pthread_mutex_t
+1234pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;pthread_mutex_lock(&amp;amp;mutex);balance = balance + 1;pthread_mutex_unlock(&amp;amp;mutex);
+Locks(mutex) are widely used">
   
     <link rel="alternate" href="/atom.xml" title="Code monkey" type="application/atom+xml">
   
@@ -59,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Lock-implementation-in-operation-system" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Lock-implementation-in-operation-system" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/09/Lock-implementation-in-operation-system/" class="article-date">
   <time datetime="2017-02-09T15:25:35.000Z" itemprop="datePublished">2017-02-09</time>
@@ -74,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/09/Lock-implementation-in-operation-system/">Lock implementation in operation system</a>
+    <h1 class="article-title" itemprop="name">
+      Lock implementation in operation system
     </h1>
   
 
@@ -132,107 +140,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Working-backwards" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/07/Working-backwards/" class="article-date">
-  <time datetime="2017-02-07T09:55:45.000Z" itemprop="datePublished">2017-02-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/07/Working-backwards/">Working Backwards</a>
-    </h1>
+    <a href="/2017/02/07/Working-backwards/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Working Backwards</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Amazon uses “working backwards” for thinking, identifying needs and discovering opportunities. </p>
-<p>We try to work backwards from the customer, rather than starting with an idea for a product and trying to bolt customers onto it.  Working backwards is a process that can be applied to any specific product decision. It is definitely important that using working backwards, especially when developing new products or features.</p>
-<p>Full working backwards documents include Press Rlease, FAQs and Visuals.</p>
-<h1 id="Press-Release-Introduction"><a href="#Press-Release-Introduction" class="headerlink" title="Press Release Introduction"></a>Press Release Introduction</h1><p>The press release describes what the product is and why customers be care about it. It is good to write press release before you start building product. Press release could make sure we are working on the right thing customers will care. It’s a one-page narrative which forces us to refine the customer benefit, ensuring that product planned for release really matters to the customer.</p>
-<p>To help you get started, answer five questions.</p>
-<ul>
-<li>who is the customer?</li>
-<li>what is the opportunity or what is customer problem?</li>
-<li>Customer benefit clear?</li>
-<li>How do you know what customer want?</li>
-<li>Can you visualize the customer experience?</li>
-</ul>
-<h1 id="FAQs"><a href="#FAQs" class="headerlink" title="FAQs"></a>FAQs</h1><p>The FAQs is where you get into the details. It’s a tool to unpack assumptions. </p>
-<h1 id="Create-Visuals"><a href="#Create-Visuals" class="headerlink" title="Create Visuals"></a>Create Visuals</h1><p>use<br><a href="https://www.processon.com" target="_blank" rel="external">https://www.processon.com</a><br>or<br><a href="https://www.lucidchart.com" target="_blank" rel="external">https://www.lucidchart.com</a><br>for creating product sketchs.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Identify needs(start with customers) –&gt; Generate ideas (brainstorm) –&gt; Evaluate opportunity (answer five questions)<br>–&gt; Discover solution(PR, FAQs, Visuals) –&gt; Refine solution –&gt; Implement</p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p><a href="https://www.quora.com/Amazon-company-What-is-Amazons-approach-to-product-development-and-product-management" target="_blank" rel="external">https://www.quora.com/Amazon-company-What-is-Amazons-approach-to-product-development-and-product-management</a><br><a href="https://wanqu.co/a/4230/2016-11-12-how-amazon-web-services-aws-achieved-an-11-5b-run-rate-by-working-backwards.html" target="_blank" rel="external">https://wanqu.co/a/4230/2016-11-12-how-amazon-web-services-aws-achieved-an-11-5b-run-rate-by-working-backwards.html</a><br><a href="https://hitenism.com/amazon-working-backwards/?utm_source=wanqu.co&amp;utm_campaign=Wanqu+Daily&amp;utm_medium=website" target="_blank" rel="external">https://hitenism.com/amazon-working-backwards/?utm_source=wanqu.co&amp;utm_campaign=Wanqu+Daily&amp;utm_medium=website</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mortises.github.io/2017/02/07/Working-backwards/" data-id="ciyyjebdz0001xuqqypjmhmzw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/06/hello-world/" class="article-date">
-  <time datetime="2017-02-06T09:41:38.000Z" itemprop="datePublished">2017-02-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mortises.github.io/2017/02/06/hello-world/" data-id="ciyyjebe20002xuqqbdio6054" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
