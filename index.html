@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://mortises.github.io"></form>
@@ -60,6 +60,68 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-Git-best-practice" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/01/Git-best-practice/" class="article-date">
+  <time datetime="2017-06-01T04:25:33.000Z" itemprop="datePublished">2017-06-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/01/Git-best-practice/">Git best practice</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>Make the changes and check them</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff</div></pre></td></tr></table></figure>
+</li>
+<li><p>Add the changes to index</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add -u, git add -A</div></pre></td></tr></table></figure>
+</li>
+<li><p>Commit to the local repos</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit</div></pre></td></tr></table></figure>
+</li>
+<li><p>Develop your features and repeat above steps. Make as many commits as you can. Take it easy, you may refactor your code.</p>
+</li>
+<li><p>Code Review and get your code shipped</p>
+</li>
+<li><p>Before Push</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">    git rebase -i commit_id</div></pre></td></tr></table></figure>
+</li>
+<li><p>Push your code</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">    git pull --rebase # Get the latest mainline version</div></pre></td></tr></table></figure>
+</li>
+<li><p>Conflict:</p>
+<ul>
+<li>Manually fix conflicts and add -u. Then git rebase –continue</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mortises.github.io/2017/06/01/Git-best-practice/" data-id="cj3dx6nrn0001niqqdd8mulbf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-Code-review-guildline" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -160,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mortises.github.io/2017/02/23/Code-review-guildline/" data-id="cizhygpyz0000zwqq67qf0n7i" class="article-share-link">Share</a>
+      <a data-url="http://mortises.github.io/2017/02/23/Code-review-guildline/" data-id="cj3dx6nrh0000niqq40xcn5cp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -235,7 +297,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mortises.github.io/2017/02/09/Lock-implementation-in-operation-system/" data-id="cizhygpz30001zwqqdlt7ipn6" class="article-share-link">Share</a>
+      <a data-url="http://mortises.github.io/2017/02/09/Lock-implementation-in-operation-system/" data-id="cj3dx6nrq0002niqqrni78fsp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -287,7 +349,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mortises.github.io/2017/02/07/Working-backwards/" data-id="cizhygpz60002zwqq5k93lq0z" class="article-share-link">Share</a>
+      <a data-url="http://mortises.github.io/2017/02/07/Working-backwards/" data-id="cj3dx6nrs0003niqqpqn9zjc3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -332,7 +394,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mortises.github.io/2017/02/06/hello-world/" data-id="cizhygpz80003zwqq8vm35u28" class="article-share-link">Share</a>
+      <a data-url="http://mortises.github.io/2017/02/06/hello-world/" data-id="cj3dx6nrt0004niqqtt1zndmg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -357,9 +419,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Arkiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
     </div>
   </div>
 
@@ -367,9 +429,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Siste innlegg</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/06/01/Git-best-practice/">Git best practice</a>
+          </li>
         
           <li>
             <a href="/2017/02/23/Code-review-guildline/">Code review guildline</a>
